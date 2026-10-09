@@ -1,0 +1,53 @@
+{
+  "name": "nb.sh",
+  "version": "7.25.5",
+  "description": "CLI and local web note-taking, bookmarking, and archiving with encryption, search, Git-backed versioning and syncing, tagging, and more in a single portable script.",
+  "global": true,
+  "install": "make install",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "nb": "nb",
+    "nb.sh": "nb",
+    "bookmark": "bin/bookmark"
+  },
+  "scripts": {
+    "test": "bats test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwmx/nb.git"
+  },
+  "keywords": [
+    "notes",
+    "bash",
+    "shell",
+    "productivity",
+    "cli",
+    "terminal",
+    "command-line",
+    "prompt",
+    "note-taking",
+    "vim",
+    "emacs",
+    "vscode",
+    "git",
+    "versioning",
+    "syncing",
+    "sync",
+    "encryption",
+    "pandoc",
+    "bookmarks",
+    "bookmarking",
+    "tagging",
+    "tags",
+    "archive"
+  ],
+  "author": "William Melody",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/xwmx/nb/issues"
+  },
+  "homepage": "https://github.com/xwmx/nb#readme"
+}
