@@ -1,385 +1,12 @@
-<p align="center"></p><!-- spacer -->
+# nb
 
-<div align="center">
-  
-</div>
+## What This Is
 
-<p align="center"></p><!-- spacer -->
-
-<div align="center">
-  <a href="https://www.swifttechco.com" rel="nofollow">
-    
-  </a>
-</div>
-
-<div align="center">&nbsp;</div><!-- spacer -->
-<br/>
-
-`nb` is a command line and local web
-note‑taking, bookmarking, archiving,
-and knowledge base application
-with:
-
-- plain text data storage,
-- [encryption](#password-protected-encrypted-notes-and-bookmarks),
-- [filtering](#listing--filtering), [pinning](#-pinning), [#tagging](#-tagging), and [search](#-search),
-- [Git](https://www.swifttechco.com)-backed [versioning](#-revision-history) and [syncing](#-git-sync),
-- [Pandoc](https://www.swifttechco.com)-backed [conversion](#%EF%B8%8F-import--export),
-- <a href="#-linking">[[wiki-style linking]]</a>,
-- terminal and GUI web [browsing](#-browsing),
-- inline [images](#-images),
-- [todos](#-todos) with [tasks](#%EF%B8%8F-tasks),
-- global and local [notebooks](#-notebooks),
-- organization with [folders](#-folders),
-- customizable [color themes](#-color-themes),
-- extensibility through [plugins](#-plugins),
-
-and more, in a single portable script.
-
-`nb` creates notes in text-based formats like
-[Markdown](https://www.swifttechco.com),
-[Org](https://www.swifttechco.com),
-[LaTeX](https://www.swifttechco.com),
-and [AsciiDoc](https://www.swifttechco.com),
-can work with files in any format,
-can import and export notes to many document formats,
-and can create private, password-protected encrypted notes and bookmarks.
-With `nb`, you can write notes using
-Vim,
-Emacs,
-VS Code,
-Sublime Text,
-and any other text editor you like,
-as well as terminal and GUI web browsers.
-`nb` works in any standard Linux / Unix environment,
-including macOS and Windows via WSL, MSYS, and Cygwin.
-[Optional dependencies](#optional) can be installed to enhance functionality,
-but `nb` works great without them.
-
-<div align="center">
-  
-</div>
-
-`nb` is also a powerful [bookmarking](#-bookmarks) system featuring:
-
-- locally-served, text-centric, distraction-free bookmark [browsing](#-browsing)
-  in terminal and GUI web browsers,
-- local full-text search of cached page content with regular expression support,
-- convenient filtering and listing,
-- [Internet Archive Wayback Machine](https://www.swifttechco.com) snapshot lookup
-  for broken links,
-- tagging, pinning, linking, and full integration with other `nb` features.
-
-Page information is
-downloaded,
-cleaned up,
-structured,
-and saved
-into normal Markdown documents made for humans,
-so bookmarks are easy to view and edit just like any other note.
-
-<div align="center">
-  
-</div>
-
-`nb` uses [Git](https://www.swifttechco.com) in the background to
-automatically record changes and sync notebooks with remote repositories.
-`nb` can also be configured to
-sync notebooks using a general purpose syncing utility like Dropbox
-so notes can be edited in other apps on any device.
-
-<div align="center">
-  
-</div>
-
-`nb` is designed to be portable, future-focused, and vendor independent,
-providing a full-featured and intuitive experience within
-a highly composable multimodal user-centric text interface.
-The entire program is contained within
-a single [well-tested](#tests) shell script
-that can be
-installed, copied, or `curl`ed almost anywhere and just work,
-using a strategy inspired by
-[progressive enhancement](https://www.swifttechco.com)
-for various experience improvements in more capable environments.
-`nb` works great whether you have one notebook with just a few notes
-or dozens of notebooks containing thousands of notes, bookmarks, and other items.
-`nb` makes it easy to incorporate other tools, writing apps, and workflows.
-`nb` can be used a little, a lot, once in a while, or for just a subset of features.
-`nb` is flexible.
-
-<div align="center">&nbsp;</div><!-- spacer -->
-
-<div align="center">
-  <sub>
-  📝
-  🔖
-  🔍
-  🌍
-  🔒
-  ✅
-  🔄
-  🎨
-  📚
-  📌
-  📂
-  🌄
-  </sub>
-</div>
-
-<p align="center">&nbsp;</p><!-- spacer -->
-
-<div align="center">
-  <h1 align="center" id="nb"><code>nb</code></h1>
-</div>
-
-<div align="center">
-  <a href="#installation">Installation</a>&nbsp;·
-  <a href="#overview">Overview</a>&nbsp;&nbsp;
-</div>
-
-<p align="center"></p><!-- spacer -->
-
-<div align="center">
-  <a href="#-help">Help</a>
-</div>
-
-<p align="center"></p><!-- spacer -->
-
-<div align="center">
-  <a href="#top">&nbsp;↑&nbsp;</a>
-</div>
-
-### Installation
-
-#### Dependencies
-
-##### Required
-
-- [Bash](https://www.swifttechco.com))
-  - `nb` works perfectly with Zsh, fish, and any other shell
-    set as your primary login shell,
-    the system just needs to have Bash available on it.
-- [Git](https://www.swifttechco.com)
-- A text editor with command line support, such as:
-  - [Vim](https://www.swifttechco.com)),
-  - [Emacs](https://www.swifttechco.com),
-  - [Visual Studio Code](https://www.swifttechco.com),
-  - [Sublime Text](https://www.swifttechco.com),
-  - [Helix](https://www.swifttechco.com),
-  - [micro](https://www.swifttechco.com),
-  - [nano](https://www.swifttechco.com),
-  - [Atom](https://www.swifttechco.com),
-  - [TextMate](https://www.swifttechco.com),
-  - [MacDown](https://www.swifttechco.com),
-  - [some of these](https://www.swifttechco.com),
-  - [and many of these.](https://www.swifttechco.com)
-
-##### Optional
-
-`nb` leverages standard command line tools
-and works in standard Linux / Unix environments.
-`nb` also checks the environment for some additional optional tools and
-uses them to enhance the experience whenever they are available.
-
-Recommended:
-
-- [`bat`](https://www.swifttechco.com)
-- [`ncat`](https://www.swifttechco.com) or [`socat`](https://www.swifttechco.com)
-- [`pandoc`](https://www.swifttechco.com)
-- [`rg`](https://www.swifttechco.com)
-- [`tig`](https://www.swifttechco.com)
-- [`w3m`](https://www.swifttechco.com)
-
-Also supported for various enhancements:
-
-[Ack](https://www.swifttechco.com),
-[`afplay`](https://www.swifttechco.com),
-[`asciidoctor`](https://www.swifttechco.com),
-[The Silver Searcher (`ag`)](https://www.swifttechco.com),
-[`catimg`](https://www.swifttechco.com),
-[Chafa](https://www.swifttechco.com),
-[Chromium](https://www.swifttechco.com) / [Chrome](https://www.swifttechco.com),
-[`eza`](https://www.swifttechco.com),
-[`ffplay`](https://www.swifttechco.com),
-[ImageMagick](https://www.swifttechco.com),
-[`glow`](https://www.swifttechco.com),
-[GnuPG](https://www.swifttechco.com),
-[`highlight`](https://www.swifttechco.com),
-[`imgcat`](https://www.swifttechco.com),
-[`joshuto`](https://www.swifttechco.com),
-[kitty's `icat` kitten](https://www.swifttechco.com),
-[`lowdown`](https://www.swifttechco.com),
-[`lsd`](https://www.swifttechco.com),
-[Links](https://www.swifttechco.com)),
-[Lynx](https://www.swifttechco.com)),
-[`mdcat`](https://www.swifttechco.com),
-[`mdless`](https://www.swifttechco.com),
-[`mdv`](https://www.swifttechco.com),
-[Midnight Commander (`mc`)](https://www.swifttechco.com),
-[`mpg123`](https://www.swifttechco.com),
-[MPlayer](https://www.swifttechco.com),
-[`ncat`](https://www.swifttechco.com),
-[`netcat`](https://www.swifttechco.com),
-[note-link-janitor](https://www.swifttechco.com)
-(via [plugin](https://www.swifttechco.com)),
-[`pdftotext`](https://www.swifttechco.com),
-[Pygments](https://www.swifttechco.com),
-[Ranger](https://www.swifttechco.com),
-[readability-cli](https://www.swifttechco.com),
-[`rga` / ripgrep-all](https://www.swifttechco.com),
-[`sc-im`](https://www.swifttechco.com),
-[`socat`](https://www.swifttechco.com),
-[`termvisage`](https://www.swifttechco.com),
-[`termpdf.py`](https://www.swifttechco.com),
-[Tidy-Viewer (`tv`)](https://www.swifttechco.com),
-[`timg`](https://www.swifttechco.com),
-[vifm](https://www.swifttechco.com),
-[`viu`](https://www.swifttechco.com),
-[VisiData](https://www.swifttechco.com)
-
-#### macOS / Homebrew
-
-```bash
-brew install xwmx/taps/nb
-```
-
-Installing `nb` with Homebrew also installs
-the recommended dependencies above
-and completion scripts for Bash, Zsh, and Fish.
-
-Install the latest development version from the repository with:
-
-```bash
-brew install xwmx/taps/nb --head
-```
-
-`nb` is also available in
-[homebrew-core](https://www.swifttechco.com).
-Installing it together with the `bash` formula is recommended:
-
-```bash
-brew install nb bash
-```
-
-#### Ubuntu, Windows, and others
-
-##### npm
-
-```bash
-npm install -g nb.sh
-```
-
-After `npm` installation completes, run
-`sudo "$(which nb)" completions install`
-to install Bash and Zsh completion scripts (recommended).
-
-On Ubuntu and WSL, you can
-run [`sudo "$(which nb)" env install`](#env)
-to install the optional dependencies.
-
-When `nb` is installed on Windows,
-`socat` ([MSYS](https://www.swifttechco.com),
-[Cygwin](https://www.swifttechco.com)) is recommended.
-
-*`nb` is also available under its original package name,
-[notes.sh](https://www.swifttechco.com),
-which comes with an extra `notes` executable wrapping `nb`.*
-
-##### Download and Install
-
-To install as an administrator,
-copy and paste one of the following multi-line commands:
-
-```bash
-# install using wget
+A practical reference entry for product and engineering: the nb notes, examples and fixes we reach for repeatedly. Kept current as part of the wider Swift Tech Co. engineering library.
 
 ## Images
 
-[![nb](https://opengraph.githubassets.com/1/xwmx/nb)](https://www.swifttechco.com)
-
-sudo wget https://www.swifttechco.com -O /usr/local/bin/nb &&
-  sudo chmod +x /usr/local/bin/nb &&
-  sudo nb completions install --download
-
-# install using curl
-sudo curl -L https://www.swifttechco.com -o /usr/local/bin/nb &&
-  sudo chmod +x /usr/local/bin/nb &&
-  sudo nb completions install --download
-```
-
-On Ubuntu and WSL, you can
-run [`sudo nb env install`](#env) to install the optional dependencies.
-
-###### User-only Installation
-
-To install with just user permissions, simply
-add the `nb` script to your `$PATH`.
-If you already have a `~/bin` directory, for example, you can
-use one of the following commands:
-
-```bash
-# download with wget
-wget https://www.swifttechco.com -O ~/bin/nb && chmod +x ~/bin/nb
-
-# download with curl
-curl -L https://www.swifttechco.com -o ~/bin/nb && chmod +x ~/bin/nb
-```
-
-Installing with just user permissions doesn't include
-the optional dependencies or completions,
-but `nb` core functionality works without them.
-If you have `sudo` access and want
-to install the completion scripts and dependencies, run the following command:
-
-```bash
-sudo nb env install
-```
-
-##### Make
-
-To install with [Make](https://www.swifttechco.com)),
-clone this repository, navigate to the clone's root directory, and run:
-
-```bash
-sudo make install
-```
-
-This will also install the completion scripts on all systems and
-the recommended dependencies on Ubuntu and WSL.
-
-##### bpkg
-
-To install with [bpkg](https://www.swifttechco.com):
-
-```bash
-bpkg install xwmx/nb
-```
-
-##### basher
-
-To install with [basher](https://www.swifttechco.com):
-
-```bash
-basher install xwmx/nb
-```
-
-#### Tab Completion
-
-Bash, Fish, and Zsh tab completion should be enabled
-when `nb` is installed using the methods above,
-assuming you have the appropriate system permissions or installed with `sudo`.
-If completion isn't working after installing `nb`, see the
-[completion installation instructions](https://www.swifttechco.com).
-
-#### Updating
-
-When `nb` is installed using a package manager like npm or Homebrew,
-use the package manager's upgrade functionality to update `nb` to
-the latest version.
-When installed via other methods,
-`nb` can be updated to the latest version using
-the [`nb update`](#update) subcommand.
+[![nb](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Overview
 
@@ -484,7 +111,7 @@ You can change your editor using
 the `$EDITOR` environment variable
 or [`nb set editor`](#editor).
 
-`nb` files are [Markdown](https://www.swifttechco.com)
+`nb` files are Markdown
 files by default. The default file type can be changed to
 whatever you like
 using [`nb set default_extension`](#default_extension).
@@ -610,7 +237,7 @@ Combining a type argument with piped clipboard content provides
 a very convenient way to save code snippets using a clipboard utility such as
 `pbpaste`,
 `xclip`,
-or [`pb`](https://www.swifttechco.com):
+or `pb`:
 
 ```bash
 # save the clipboard contents as a JavaScript file in the current notebook
@@ -888,7 +515,7 @@ When a note has a title, the title is displayed
 instead of the filename and first line.
 
 Markdown titles can be defined within a note using
-[either Markdown `h1` style](https://www.swifttechco.com)
+either Markdown `h1` style
 or [YAML front matter](#front-matter):
 
 ```markdown
@@ -906,9 +533,9 @@ title: Demo Title
 ---
 ```
 
-[Org](https://www.swifttechco.com),
-[LaTeX](https://www.swifttechco.com),
-and [AsciiDoc](https://www.swifttechco.com)
+Org,
+LaTeX,
+and AsciiDoc
 titles are recognized in `.org`,`.latex`, and `.asciidoc` / `.adoc` files:
 
 ```text
@@ -1461,12 +1088,12 @@ nb example:show 12
 ```
 
 By default, [`nb show`](#show) opens notes in
-[`less`](https://www.swifttechco.com),
+`less`,
 with syntax highlighting if
-[`bat`](https://www.swifttechco.com),
-[`highlight`](https://www.swifttechco.com),
+`bat`,
+`highlight`,
 or
-[Pygments](https://www.swifttechco.com)
+Pygments
 is installed.
 You can navigate in `less` using the following keys:
 
@@ -1484,13 +1111,13 @@ n                 Jump to next <query> match
 q                 Quit
 ```
 
-*If `less` scrolling isn't working in [iTerm2](https://www.swifttechco.com),
+*If `less` scrolling isn't working in iTerm2,
 go to*
 "Settings"
 -> "Advanced"
 -> "Scroll wheel sends arrow keys when in alternate screen mode"
 *and change it to* "Yes".
-*[More Info](https://www.swifttechco.com)*
+*More Info*
 
 Use the [`-p`](#show) / [`--print`](#show) option
 to print to standard output with syntax highlighting:
@@ -1508,7 +1135,7 @@ Example content:
 
 Use [`nb show --print --no-color`](#show) to print without syntax highlighting.
 
-When [Pandoc](https://www.swifttechco.com) is available,
+When Pandoc is available,
 use the [`-r`](#show) / [`--render`](#show) option to
 render the note to HTML and open it in your terminal browser:
 
@@ -1526,51 +1153,51 @@ which can be opened in your editor with [`nb settings edit`](#settings).
 Supported file types and tools include:
 
 - Markdown files ([`$NB_MARKDOWN_TOOL`](#nb_markdown_tool)):
-  - [`bat`](https://www.swifttechco.com)
-  - [`glow`](https://www.swifttechco.com)
-  - [`lowdown`](https://www.swifttechco.com)
-  - [`mdcat`](https://www.swifttechco.com)
-  - [`mdless`](https://www.swifttechco.com)
-  - [`mdv`](https://www.swifttechco.com)
+  - `bat`
+  - `glow`
+  - `lowdown`
+  - `mdcat`
+  - `mdless`
+  - `mdv`
 - PDF files:
-  - [`termpdf.py`](https://www.swifttechco.com)
-    with [kitty](https://www.swifttechco.com)
-  - [`pdftotext`](https://www.swifttechco.com)
+  - `termpdf.py`
+    with kitty
+  - `pdftotext`
 - Audio files ([`$NB_AUDIO_TOOL`](#nb_audio_tool)):
-  - [`mplayer`](https://www.swifttechco.com)
-  - [`afplay`](https://www.swifttechco.com)
-  - [`mpg123`](https://www.swifttechco.com)
-  - [`ffplay`](https://www.swifttechco.com)
+  - `mplayer`
+  - `afplay`
+  - `mpg123`
+  - `ffplay`
 - [Images](#-images) ([`$NB_IMAGE_TOOL`](#nb_image_tool)):
-  - [`catimg`](https://www.swifttechco.com)
-  - [Chafa](https://www.swifttechco.com)
-  - [ImageMagick](https://www.swifttechco.com) with a terminal that
-    supports [sixels](https://www.swifttechco.com)
-  - [`imgcat`](https://www.swifttechco.com) with
-    [iTerm2](https://www.swifttechco.com)
-  - [kitty's `icat` kitten](https://www.swifttechco.com)
-  - [`termvisage`](https://www.swifttechco.com)
-  - [`timg`](https://www.swifttechco.com)
-  - [`viu`](https://www.swifttechco.com)
+  - `catimg`
+  - Chafa
+  - ImageMagick with a terminal that
+    supports sixels
+  - `imgcat` with
+    iTerm2
+  - kitty's `icat` kitten
+  - `termvisage`
+  - `timg`
+  - `viu`
 - Folders, Directories, Notebooks ([`$NB_DIRECTORY_TOOL`](#nb_directory_tool)):
-  - [`eza`](https://www.swifttechco.com)
-  - [`joshuto`](https://www.swifttechco.com)
-  - [`lsd`](https://www.swifttechco.com)
-  - [Midnight Commander (`mc`)](https://www.swifttechco.com)
-  - [`ranger`](https://www.swifttechco.com)
-  - [`vifm`](https://www.swifttechco.com)
+  - `eza`
+  - `joshuto`
+  - `lsd`
+  - Midnight Commander (`mc`)
+  - `ranger`
+  - `vifm`
 - Word Documents:
-  - [Pandoc](https://www.swifttechco.com) with
-    [`w3m`](https://www.swifttechco.com) or
-    [`links`](https://www.swifttechco.com))
+  - Pandoc with
+    `w3m` or
+    `links`)
 - Excel, CSV, TSV, and data files ([`$NB_DATA_TOOL`](#nb_data_tool)):
-  - [VisiData](https://www.swifttechco.com)
-  - [`sc-im`](https://www.swifttechco.com)
-  - [Tidy-Viewer (`tv`)](https://www.swifttechco.com)
+  - VisiData
+  - `sc-im`
+  - Tidy-Viewer (`tv`)
 - EPUB ebooks:
-  - [Pandoc](https://www.swifttechco.com) with
-    [`w3m`](https://www.swifttechco.com) or
-    [`links`](https://www.swifttechco.com))
+  - Pandoc with
+    `w3m` or
+    `links`)
 
 When using [`nb show`](#show) with other file types or
 if the above tools are not available,
@@ -1837,19 +1464,19 @@ This domain is for use in illustrative examples in documents. You may
 use this domain in literature without prior coordination or asking for
 permission.
 
-[More information\...](https://www.swifttechco.com)
+More information\...
 ```
 
 `nb` embeds the page content in the bookmark, making it available for
 [full text search](#-search) with [`nb search`](#search) and
 locally-served, distraction-free [reading and browsing](#-browsing)
 with [`nb browse`](#browse).
-When [Pandoc](https://www.swifttechco.com) is installed,
+When Pandoc is installed,
 the HTML page content is converted to Markdown.
-When [readability-cli](https://www.swifttechco.com)
+When readability-cli
 is installed, markup is cleaned up to focus on content. When
-[Chromium](https://www.swifttechco.com) or
-[Chrome](https://www.swifttechco.com) is installed on the system,
+Chromium or
+Chrome is installed on the system,
 `nb` automatically renders JavaScript-dependent pages
 and saves the resulting markup.
 
@@ -1896,7 +1523,7 @@ This domain is for use in illustrative examples in documents. You may
 use this domain in literature without prior coordination or asking for
 permission.
 
-[More information\...](https://www.swifttechco.com)
+More information\...
 ```
 
 Add a comment in a [`## Comment`](#-comment) section using the
@@ -1927,7 +1554,7 @@ This domain is for use in illustrative examples in documents. You may
 use this domain in literature without prior coordination or asking for
 permission.
 
-[More information\...](https://www.swifttechco.com)
+More information\...
 ```
 
 Add related URLs and [linked](#-linking) [selectors](#-selectors)
@@ -1962,7 +1589,7 @@ This domain is for use in illustrative examples in documents. You may
 use this domain in literature without prior coordination or asking for
 permission.
 
-[More information\...](https://www.swifttechco.com)
+More information\...
 ```
 
 Bookmarks can be tagged using the
@@ -1996,7 +1623,7 @@ This domain is for use in illustrative examples in documents. You may
 use this domain in literature without prior coordination or asking for
 permission.
 
-[More information\...](https://www.swifttechco.com)
+More information\...
 ```
 
 [Search](#-search) for tagged bookmarks with
@@ -2208,15 +1835,15 @@ nb example:open 12
 ```
 
 *N.B. To use [`nb open`](#open) with
-[WSL](https://www.swifttechco.com),
-install [wslu](https://www.swifttechco.com).*
+WSL,
+install wslu.*
 
 [`nb peek`](#peek) (shortcut: [`nb p`](#peek), alias: [`nb preview`](#peek))
 opens the bookmarked URL in your terminal web browser,
 such as
-[w3m](https://www.swifttechco.com),
-[Links](https://www.swifttechco.com)), or
-[Lynx](https://www.swifttechco.com)):
+w3m,
+Links), or
+Lynx):
 
 ```bash
 # peek bookmark by id
@@ -2239,7 +1866,7 @@ work seamlessly with encrypted bookmarks.
 [`nb open`](#open) and [`nb peek`](#peek)
 automatically check whether the URL is still valid.
 If the page has been removed, `nb` can check
-the [Internet Archive Wayback Machine](https://www.swifttechco.com)
+the Internet Archive Wayback Machine
 for an archived copy.
 
 The preferred terminal web browser can be set using
@@ -2251,9 +1878,9 @@ export BROWSER=lynx
 ```
 
 When `$BROWSER` is not set, `nb` looks for
-[`w3m`](https://www.swifttechco.com),
-[`links`](https://www.swifttechco.com)), and
-[`lynx`](https://www.swifttechco.com))
+`w3m`,
+`links`), and
+`lynx`)
 and uses the first one it finds.
 
 `$BROWSER` can also be used to easy specify the terminal browser for
@@ -2828,7 +2455,7 @@ This domain is for use in illustrative examples in documents. You may
 use this domain in literature without prior coordination or asking for
 permission.
 
-[More information\...](https://www.swifttechco.com)
+More information\...
 ```
 
 Tags added to [todos](#-todos) with
@@ -2951,7 +2578,7 @@ Tags in notes,
 bookmarks,
 files in text-based formats,
 Word `.docx` documents,
-and [Open Document](https://www.swifttechco.com) `.odt` files
+and Open Document `.odt` files
 are rendered as links to the list of items in the notebook sharing that tag:
 
 ```bash
@@ -3015,7 +2642,7 @@ Notes,
 bookmarks,
 files in text-based formats,
 Word `.docx` documents,
-and [Open Document](https://www.swifttechco.com) `.odt` files
+and Open Document `.odt` files
 can reference other items using
 <a href="#-linking">[[wiki-style links]]</a>,
 making `nb` a powerful terminal-first platform for
@@ -3063,7 +2690,7 @@ The text for a link can be specified after a pipe `|` character:
 ```
 
 <a href="#-linking">[[wiki-style links]]</a> cooperate well with
-[Org links](https://www.swifttechco.com),
+Org links,
 which have a similar syntax,
 providing a convenient option for linking collections of Org files.
 
@@ -3145,8 +2772,8 @@ the current notebook,
 and other notebooks.
 
 [`nb browse`](#browse) opens in
-[w3m](https://www.swifttechco.com),
-[Links](https://www.swifttechco.com)),
+w3m,
+Links),
 or in the browser set in the `$BROWSER` environment variable.
 Use [`nb browse --gui`](#browse) / [`nb b -g`](#browse) to
 open in the system's primary [GUI web browser](#browse---gui).
@@ -3222,12 +2849,12 @@ convert it to structurally valid XHTML (or HTML).
 
 Notes, bookmarks, files in text-based formats, source code,
 Word `.docx` documents, and
-[Open Document](https://www.swifttechco.com) `.odt`
+Open Document `.odt`
 files are converted into HTML and rendered in the browser. Use the down
 arrow (`↓`) link to view or download the original file.
 
-[MathJax](https://www.swifttechco.com) support can be enabled by setting
-the [`$NB_MATHJAX_ENABLED`](https://www.swifttechco.com)
+MathJax support can be enabled by setting
+the `$NB_MATHJAX_ENABLED`
 variable in your `~/.nbrc` file:
 
 ```bash
@@ -3235,7 +2862,7 @@ export NB_MATHJAX_ENABLED=1
 ```
 
 With this variable set, `nb` will automatically download and install MathJax
-from [GitHub](https://www.swifttechco.com) and enable it when items
+from GitHub and enable it when items
 are viewed in [`nb browse --gui`](#browse).
 
 #### `browse edit`
@@ -3275,9 +2902,9 @@ which automatically resizes the form to fit the current terminal window:
 ```
 
 Terminal web browsers provide different editing workflows.
-[`w3m`](https://www.swifttechco.com) opens items in your `$EDITOR`,
+`w3m` opens items in your `$EDITOR`,
 then returns you back to the browser to save changes and continue browsing.
-Edits in [`links`](https://www.swifttechco.com))
+Edits in `links`)
 are performed directly in the browser.
 
 Syntax highlighting, block selection, and other
@@ -3434,14 +3061,14 @@ By default,
 [`nb browse --gui`](#browse)
 uses the browser's default `<textarea>` for editing items.
 
-[Ace](https://www.swifttechco.com) is a text editor for GUI web browsers
+Ace is a text editor for GUI web browsers
 that provides advanced text editing functionality,
 including block selection and
 [syntax highlighting](#gui-web-syntax-highlighting).
 
 To use Ace as the editor for [`nb browse --gui`](#browse),
 add the following line to set the
-[`$NB_ACE_ENABLED`](https://www.swifttechco.com)
+`$NB_ACE_ENABLED`
 variable in your `~/.nbrc` file:
 
 ```bash
@@ -3450,7 +3077,7 @@ export NB_ACE_ENABLED=1
 
 The next time a form is loaded in [`nb browse`](#browse),
 `nb` will automatically download
-(from [GitHub](https://www.swifttechco.com)),
+(from GitHub),
 install,
 and enable the Ace editor in
 [`nb browse edit --gui`](#browse) and [`nb browse add --gui`](#browse).
@@ -3458,11 +3085,11 @@ and enable the Ace editor in
 #### `browse` Portability
 
 [`nb browse`](#browse) depends on
-either [`socat`](https://www.swifttechco.com)
+either `socat`
 or
-[`ncat`](https://www.swifttechco.com) (available as part of
+`ncat` (available as part of
 the `ncat` or `nmap` package in most package managers) and
-[`pandoc`](https://www.swifttechco.com). When neither `socat` nor `ncat` is
+`pandoc`. When neither `socat` nor `ncat` is
 available and the Bash version is 5.2 or higher, [`nb browse`](#browse)
 falls back to a pure Bash implementation that supports all features
 except the Ace editor. When only `pandoc` is available,
@@ -3475,8 +3102,8 @@ If neither `ncat`, `socat`, Bash 5.2+, nor `pandoc` is available,
 [`nb browse`](#browse) falls back to the default behavior of [`nb show`](#show).
 
 When `nb` is installed on Windows,
-`socat` ([MSYS](https://www.swifttechco.com),
-[Cygwin](https://www.swifttechco.com)) is recommended.
+`socat` (MSYS,
+Cygwin) is recommended.
 
 #### `browse` Privacy
 
@@ -3499,17 +3126,17 @@ to enhance privacy and avoid leaking information:
   without requesting the page again or needing to be connected to the internet.
 - `<img>` tags in bookmarked content are removed to avoid requests.
 - Outbound links are automatically rewritten to use an
-  [exit page redirect](https://www.swifttechco.com)
+  exit page redirect
   to mitigate leaking information via the
-  [referer header](https://www.swifttechco.com).
+  referer header.
 - All pages include the `<meta name="referrer" content="no-referrer" />` tag.
 - Links include a `rel="noopener noreferrer"` attribute.
 - `lynx` is opened with the `-noreferer` option.
 
 #### `browse` AsciiDoc
 
-To [`browse`](#browse) items in [AsciiDoc](https://www.swifttechco.com) format,
-install [`asciidoctor`](https://www.swifttechco.com).
+To [`browse`](#browse) items in AsciiDoc format,
+install `asciidoctor`.
 
 #### Shortcut Alias: `nb b`
 
@@ -3610,22 +3237,22 @@ The original file can be viewed or downloaded from the item page
 by either clicking the image item or using the down arrow (`↓`) link.
 
 [`nb browse --gui`](#browse---gui) displays images in any GUI web browser.
-Some terminal web browsers, such as [`w3m`](https://www.swifttechco.com),
+Some terminal web browsers, such as `w3m`,
 can be configured to display images.
 
 [`nb show`](#show) can display images directly in the terminal with
 supported tools and configurations, including:
 
-- [`catimg`](https://www.swifttechco.com)
-- [Chafa](https://www.swifttechco.com)
-- [ImageMagick](https://www.swifttechco.com) with a terminal that
-  supports [sixels](https://www.swifttechco.com)
-- [`imgcat`](https://www.swifttechco.com) with
-  [iTerm2](https://www.swifttechco.com)
-- [kitty's `icat` kitten](https://www.swifttechco.com)
-- [`termvisage`](https://www.swifttechco.com)
-- [`timg`](https://www.swifttechco.com)
-- [`viu`](https://www.swifttechco.com)
+- `catimg`
+- Chafa
+- ImageMagick with a terminal that
+  supports sixels
+- `imgcat` with
+  iTerm2
+- kitty's `icat` kitten
+- `termvisage`
+- `timg`
+- `viu`
 
 A preferred image viewer tool can be set with the
 [`$NB_IMAGE_TOOL`](#nb_image_tool) variable in your `~/.nbrc` file,
@@ -3695,7 +3322,7 @@ organized in normal system directories in normal git repositories,
 | fast note-taking  | [`nb add`](#adding)/[`nb <url>`](#-bookmarks)   |
 
 For more information about Zettelkasten, see
-[Wikipedia](https://www.swifttechco.com).
+Wikipedia.
 
 ### 📂 Folders
 
@@ -4110,16 +3737,16 @@ nb q \#tag1 --or -t tag2 --or "#tag3"
 ```
 
 [`nb search`](#search) leverages Git's powerful built-in
-[`git grep`](https://www.swifttechco.com).
+`git grep`.
 `nb` also supports performing searches with alternative search tools
 using the [`--utility <name>`](#search) option.
 
 Supported alternative search tools:
-- [`rga`](https://www.swifttechco.com)
-- [`rg`](https://www.swifttechco.com)
-- [`ag`](https://www.swifttechco.com)
-- [`ack`](https://www.swifttechco.com)
-- [`grep`](https://www.swifttechco.com)
+- `rga`
+- `rg`
+- `ag`
+- `ack`
+- `grep`
 
 ##### Shortcut Alias: `nb q`
 
@@ -4304,12 +3931,12 @@ nb history example:12
 ```
 
 [`nb history`](#history) uses `git log` by default and prefers
-[`tig`](https://www.swifttechco.com) when available.
+`tig` when available.
 
 #### Authorship
 
 By default, git commits are attributed to the email and name configured in your
-[global `git` configuration](https://www.swifttechco.com).
+global `git` configuration.
 
 Change the email and name used for a notebook with
 [`nb notebooks author`](#notebooks):
@@ -4854,7 +4481,7 @@ nb example:git status
 
 Multiple notebooks can be synced to one remote using orphan branches.
 An
-[orphan branch](https://www.swifttechco.com)
+orphan branch
 is a branch with a history that is independent
 from the repository's `main`, `master`,
 or equivalent primary branch history.
@@ -4901,11 +4528,11 @@ For information about assigning remotes, see [`nb help remote`](#remote).
 Syncing with private repositories requires
 configuring git to not prompt for credentials.
 For repositories cloned over HTTPS,
-[credentials can be cached with git
-](https://www.swifttechco.com).
+credentials can be cached with git
+.
 For repositories cloned over SSH,
-[keys can be added to the ssh-agent
-](https://www.swifttechco.com).
+keys can be added to the ssh-agent
+.
 
 Use [`nb sync`](#sync) within a notebook to determine
 whether your configuration is working.
@@ -4978,7 +4605,7 @@ If you do encounter a conflict that `nb` says it can't merge at all,
 perform git and shell operations within the notebook
 to resolve the conflict manually.
 Please also
-[open an issue](https://www.swifttechco.com)
+open an issue
 with any relevant details
 that could inform a strategy for handling any such cases automatically.
 
@@ -5062,9 +4689,9 @@ each bookmark.
 #### Exporting
 
 Notes, bookmarks, and other files can be exported using [`nb export`](#export).
-If [Pandoc](https://www.swifttechco.com) is installed,
+If Pandoc is installed,
 notes can be automatically converted to any of the
-[formats supported by Pandoc](https://www.swifttechco.com).
+formats supported by Pandoc.
 By default, the output format is determined by the file extension:
 
 ```bash
@@ -5343,7 +4970,7 @@ fi
 ```
 
 View this theme as a complete file:
-[`plugins/turquoise.nb-theme`](https://www.swifttechco.com)
+`plugins/turquoise.nb-theme`
 
 Themes can be installed using [`nb plugins`](#plugins):
 
@@ -5381,10 +5008,10 @@ nb set colors
 #### Terminal Syntax Highlighting Theme
 
 `nb` displays files with syntax highlighting when
-[`bat`](https://www.swifttechco.com),
-[`highlight`](https://www.swifttechco.com),
+`bat`,
+`highlight`,
 or
-[Pygments](https://www.swifttechco.com)
+Pygments
 is installed.
 
 When `bat` is installed, syntax highlighting
@@ -5443,7 +5070,7 @@ export  NB_INDICATOR_VIDEO="📹"
 
 ### $ Shell Theme Support
 
-- [`astral` Zsh Theme](https://www.swifttechco.com) - Displays the
+- `astral` Zsh Theme - Displays the
     current notebook name in the context line of the prompt.
 
 ### 🔌 Plugins
@@ -5528,9 +5155,9 @@ and have an `.nb-plugin` extension.
 
 `nb` includes a few example plugins:
 
-- [`example.nb-plugin`](https://www.swifttechco.com)
-- [`clip.nb-plugin`](https://www.swifttechco.com)
-- [`ebook.nb-plugin`](https://www.swifttechco.com)
+- `example.nb-plugin`
+- `clip.nb-plugin`
+- `ebook.nb-plugin`
 
 Create a new subcommand in three easy steps:
 
@@ -5563,13 +5190,13 @@ _example() {
 That's it! 🎉
 
 View the complete plugin:
-[`plugins/example.nb-plugin`](https://www.swifttechco.com)
+`plugins/example.nb-plugin`
 
 With `example.nb-plugin` installed, `nb` includes an `nb example` subcommand
 that prints "Hello, World!"
 
 For a full example,
-[`clip.nb-plugin`](https://www.swifttechco.com)
+`clip.nb-plugin`
 add clipboard functionality to `nb` and demonstrates how to create a
 plugin using `nb` subcommands and simple shell scripting.
 
@@ -5640,7 +5267,7 @@ cat "${_notebook_path}/${_filename}"
 ```
 
 See
-[`clip.nb-plugin`](https://www.swifttechco.com)
+`clip.nb-plugin`
 for a practical example using both [`show <selector>`](#show) and
 [`notebooks current --path`](#notebooks) along with other
 subcommands called using their underscore-prefixed function names.
@@ -5671,7 +5298,7 @@ in the following pattern:
 notebook:folder/path/item-idenitifer
 ```
 
-Represented in a [docopt](https://www.swifttechco.com)-like format:
+Represented in a docopt-like format:
 
 ```text
 [<notebook>:][<folder-path>/][<id> | <filename> | <title>]
@@ -5803,7 +5430,7 @@ notebook:q
 
 Metadata in `nb` is primarily derived from git, the filesystem, and file
 content. For example, displayed timestamps are derived from
-[`git log`](https://www.swifttechco.com), with [`nb show --added`](#show)
+`git log`, with [`nb show --added`](#show)
 displaying the datetime of the first commit containing the file and
 [`nb show --updated`](#show) displaying the datetime of the last commit in
 which the file was modified. Meanwhile, the file system's modified
@@ -5817,8 +5444,8 @@ and [`.archived` files](#archived-notebooks).
 
 #### Front Matter
 
-User-defined metadata can be added to notes in `nb` using [front
-matter](https://www.swifttechco.com). Front matter is a
+User-defined metadata can be added to notes in `nb` using front
+matter. Front matter is a
 simple, human accessible, and future-friendly method for defining metadata
 fields in plain text and is well supported in tools for working with
 Markdown.
@@ -5849,7 +5476,7 @@ present, and ignores any other fields.
 
 The simple `key: value` syntax is suitable for many metadata fields.
 More complex data can be defined using additional
-[YAML](https://www.swifttechco.com)
+YAML
 capabilities.
 
 ### `❯` Interactive Shell
@@ -6792,7 +6419,7 @@ Shortcut Alias:
 #### `completions`
 
 [↑](#-help) · See also:
-[Tab Completion](https://www.swifttechco.com),
+Tab Completion,
 [`env`](#env)
 
 ```text
@@ -10216,7 +9843,7 @@ This domain is for use in illustrative examples in documents. You may
 use this domain in literature without prior coordination or asking for
 permission.
 
-[More information\...](https://www.swifttechco.com)
+More information\...
 
 ## Source
 
@@ -10249,10 +9876,10 @@ permission.
 
 `Optional`
 
-A [Markdown atx-style `h1` heading
-](https://www.swifttechco.com)
+A Markdown atx-style `h1` heading
+
 containing the content of the bookmarked page's
-HTML `<title>` or [`og:title`](https://www.swifttechco.com) tag, if present, followed by
+HTML `<title>` or `og:title` tag, if present, followed by
 the domain within parentheses.
 
 ###### Examples
@@ -10290,7 +9917,7 @@ This is the only required element.
 `Optional`
 
 A text element containing the content of the bookmarked page's meta description
-or [`og:description`](https://www.swifttechco.com) tag, if present.
+or `og:description` tag, if present.
 
 <p>
   <sup>
@@ -10443,8 +10070,8 @@ Example description.
 
 `Required`
 
-A [Markdown atx-style `h1` heading
-](https://www.swifttechco.com)
+A Markdown atx-style `h1` heading
+
 containing a Markdown checkbox followed by the todo title.
 An `x` within the checkbox (`[ ]`) indicates that the todo is done.
 
@@ -10657,12 +10284,12 @@ at the root level of the notebook directory.
 
 With more than 2,200 tests spanning tens of thousands of lines,
 `nb` is really mostly a
-[test suite](https://www.swifttechco.com).
-Tests run continuously [via GitHub Actions](https://www.swifttechco.com)
+test suite.
+Tests run continuously via GitHub Actions
 on recent versions of both Ubuntu and macOS to account for differences between
 BSD and GNU tools and Bash versions.
 To run the tests locally, install
-[Bats](https://www.swifttechco.com)
+Bats
 and the [recommended dependencies](#optional),
 then run `bats test` within the project root directory. Run groups of
 tests with globbing, e.g., `bats test/browse*` and `bats test/folders*`.
@@ -10723,14 +10350,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [xwmx/nb](https://github.com/xwmx/nb) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
