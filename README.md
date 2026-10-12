@@ -6,7 +6,7 @@ A practical reference entry for product and engineering: the nb notes, examples 
 
 ## Images
 
-[![nb](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![nb](images/preview.png)](https://github.com/Swift-Tech-Co/nb)
 
 ## Overview
 
@@ -341,7 +341,7 @@ Supported tags include:
   and piped content.</dd>
   <dt><code>&#x007B;{date}}</code></dt>
   <dd>The ouput of the system's <code>date</code> command. Use the
-  <a href="https://www.swifttechco.com"><code>date</code>
+  <a href="https://github.com/Swift-Tech-Co/nb"><code>date</code>
   command options</a> to control formatting, e.g.,
   <code>&#x007B;{date +"%Y-%m-%d"}}</code>.
  </dd>
@@ -1027,11 +1027,11 @@ Items can be edited within terminal and GUI web browsers using
 
 [# Daring Fireball: Markdown (daringfireball.net)         ]
 [                                                         ]
-[https://www.swifttechco.com          ]
+[https://github.com/Swift-Tech-Co/nb          ]
 [                                                         ]
 [## Related                                               ]
 [                                                         ]
-[- https://www.swifttechco.com               ]
+[- https://github.com/Swift-Tech-Co/nb               ]
 [                                                         ]
 [## Comments                                              ]
 [                                                         ]
@@ -1280,11 +1280,11 @@ Items can be viewed within terminal and GUI web browsers using
 ❯nb · text : formats / markdown / 123 · ↓ · edit | +
 Daring Fireball: Markdown (daringfireball.net)
 
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 Related
 
-  • https://www.swifttechco.com
+  • https://github.com/Swift-Tech-Co/nb
 
 Comments
 
@@ -1441,7 +1441,7 @@ containing information extracted from the bookmarked pages.
 To create a new bookmark, pass a URL as the first argument to `nb`:
 
 ```bash
-nb https://www.swifttechco.com
+nb https://github.com/Swift-Tech-Co/nb
 ```
 
 `nb` automatically generates a bookmark using information from the page:
@@ -1449,7 +1449,7 @@ nb https://www.swifttechco.com
 ```markdown
 # Example Title (example.com)
 
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 ## Description
 
@@ -1485,7 +1485,7 @@ URL contains characters that are preventing it from being saved in full,
 URLs can also be enclosed in quotes when passed to `nb`:
 
 ```bash
-nb "https://www.swifttechco.com"
+nb "https://github.com/Swift-Tech-Co/nb"
 ```
 
 In addition to caching the page content,
@@ -1495,14 +1495,14 @@ using the
 [`-q <quote>`](#bookmark) / [`--quote <quote>`](#bookmark) option:
 
 ```bash
-nb https://www.swifttechco.com --quote "Example quote line one.
+nb https://github.com/Swift-Tech-Co/nb --quote "Example quote line one.
 
 Example quote line two."
 ```
 ```markdown
 # Example Title (example.com)
 
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 ## Description
 
@@ -1530,12 +1530,12 @@ Add a comment in a [`## Comment`](#-comment) section using the
 [`-c <comment>`](#bookmark) / [`--comment <comment>`](#bookmark) option:
 
 ```bash
-nb https://www.swifttechco.com --comment "Example comment."
+nb https://github.com/Swift-Tech-Co/nb --comment "Example comment."
 ```
 ```markdown
 # Example Title (example.com)
 
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 ## Description
 
@@ -1564,12 +1564,12 @@ to a [`## Related`](#-related) section using the
 option:
 
 ```bash
-nb https://www.swifttechco.com --related example:123 -r https://www.swifttechco.com
+nb https://github.com/Swift-Tech-Co/nb --related example:123 -r https://github.com/Swift-Tech-Co/nb
 ```
 ```markdown
 # Example Title (example.com)
 
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 ## Description
 
@@ -1578,7 +1578,7 @@ Example description.
 ## Related
 
 - [[example:123]]
-- https://www.swifttechco.com
+- https://github.com/Swift-Tech-Co/nb
 
 ## Content
 
@@ -1599,12 +1599,12 @@ Tags are converted into [#hashtags](#-tagging) and
 added to a [`## Tags`](#-tags) section:
 
 ```bash
-nb https://www.swifttechco.com --tags tag1,tag2
+nb https://github.com/Swift-Tech-Co/nb --tags tag1,tag2
 ```
 ```markdown
 # Example Title (example.com)
 
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 ## Description
 
@@ -1651,7 +1651,7 @@ Bookmarks can also be encrypted:
 
 ```bash
 # create a new password-protected, encrypted bookmark
-nb https://www.swifttechco.com --encrypt
+nb https://github.com/Swift-Tech-Co/nb --encrypt
 ```
 
 Encrypted bookmarks require a password before they can be viewed or
@@ -1662,7 +1662,7 @@ multiple [`<url>`](#bookmark) arguments. Additional arguments will be reused
 for each bookmark:
 
 ```bash
-❯ nb https://www.swifttechco.com https://www.swifttechco.com --tags tag1,tag2 --filename example
+❯ nb https://github.com/Swift-Tech-Co/nb https://github.com/Swift-Tech-Co/nb --tags tag1,tag2 --filename example
 Added: [1] 🔖 example.bookmark.md "Example Domain (example.com)"
 Added: [2] 🔖 example-1.bookmark.md "Example Domain (example.net)"
 ```
@@ -1783,11 +1783,11 @@ linked [#tags](#-tagging), and external links:
 ❯nb · text : formats / markdown / 123 · ↓ · edit | +
 Daring Fireball: Markdown (daringfireball.net)
 
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 Related
 
-  • https://www.swifttechco.com
+  • https://github.com/Swift-Tech-Co/nb
 
 Comments
 
@@ -1937,7 +1937,7 @@ The bookmark URL is the first URL in the file within `<` and `>` characters.
 To create a minimally valid bookmark file with [`nb add`](#add):
 
 ```bash
-nb add example.bookmark.md --content "https://www.swifttechco.com"
+nb add example.bookmark.md --content "https://github.com/Swift-Tech-Co/nb"
 ```
 
 For a full overview, see
@@ -1955,7 +1955,7 @@ accepting all of the same subcommands and options with identical behavior.
 Bookmark a page:
 
 ```bash
-❯ bookmark https://www.swifttechco.com --tags tag1,tag2
+❯ bookmark https://github.com/Swift-Tech-Co/nb --tags tag1,tag2
 Added: [3] 🔖 20200101000000.bookmark.md "Example Title (example.com)"
 ```
 List and filter bookmarks with
@@ -2082,7 +2082,7 @@ can be added to a [`## Related`](#-related-1) field using the
 option:
 
 ```bash
-❯ nb todo add "Example todo four." --related example:123 -r https://www.swifttechco.com
+❯ nb todo add "Example todo four." --related example:123 -r https://github.com/Swift-Tech-Co/nb
 Added: [4] ✔️ [ ] Example todo four.
 
 ❯ nb show 4 --print
@@ -2091,7 +2091,7 @@ Added: [4] ✔️ [ ] Example todo four.
 ## Related
 
 - [[example:123]]
-- https://www.swifttechco.com
+- https://github.com/Swift-Tech-Co/nb
 ```
 
 [Tags](#-tagging) can be added to todos with the
@@ -2430,13 +2430,13 @@ Tags added to [bookmarks](#bookmarks) with
 are placed in a [`## Tags`](#-tags) section:
 
 ```bash
-❯ nb https://www.swifttechco.com --tags tag1,tag2
+❯ nb https://github.com/Swift-Tech-Co/nb --tags tag1,tag2
 ```
 
 ```markdown
 # Example Title (example.com)
 
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 ## Description
 
@@ -2815,11 +2815,11 @@ of bookmarks.
 ❯nb · text : formats / markdown / 123 · ↓ · edit | +
 Daring Fireball: Markdown (daringfireball.net)
 
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 Related
 
-  • https://www.swifttechco.com
+  • https://github.com/Swift-Tech-Co/nb
 
 Comments
 
@@ -2882,11 +2882,11 @@ which automatically resizes the form to fit the current terminal window:
 
 [# Daring Fireball: Markdown (daringfireball.net)         ]
 [                                                         ]
-[https://www.swifttechco.com          ]
+[https://github.com/Swift-Tech-Co/nb          ]
 [                                                         ]
 [## Related                                               ]
 [                                                         ]
-[- https://www.swifttechco.com               ]
+[- https://github.com/Swift-Tech-Co/nb               ]
 [                                                         ]
 [## Comments                                              ]
 [                                                         ]
@@ -3181,7 +3181,7 @@ and GUI applications.
 nb import example.png
 
 # import an image file from a URL into the current notebook
-nb import https://www.swifttechco.com
+nb import https://github.com/Swift-Tech-Co/nb
 
 # nb import "sample.jpg" into the "demo" folder in the "example" notebook
 nb import sample.jpg example:demo/
@@ -3268,10 +3268,10 @@ specify the image's relative path within the notebook:
 
 ```markdown
 # reference "example.jpg" from markdown
-[![](example.jpg)](https://www.swifttechco.com)
+[![](example.jpg)](https://github.com/Swift-Tech-Co/nb)
 
 # reference "demo.png" in the "sample" folder from markdown
-[![](sample/demo.png)](https://www.swifttechco.com)
+[![](sample/demo.png)](https://github.com/Swift-Tech-Co/nb)
 ```
 
 Images in any notebook can be referenced using the `--original` URL,
@@ -3280,7 +3280,7 @@ by either clicking the image item or using the down arrow (`↓`) link.
 
 ```markdown
 # reference "example.jpg" in the "home" notebook with the --original URL
-[![](http://localhost:6789/--original/home/example.jpg)](https://www.swifttechco.com)
+[![](http://localhost:6789/--original/home/example.jpg)](https://github.com/Swift-Tech-Co/nb)
 ```
 
 Image references in content are rendered inline within web browsers with
@@ -3627,7 +3627,7 @@ with color highlighting:
 --------------------------------------------------------------
 1:# Example Bookmark (example.com)
 
-3:https://www.swifttechco.com
+3:https://github.com/Swift-Tech-Co/nb
 
 [2718] example.md "Example Note"
 --------------------------------
@@ -4092,7 +4092,7 @@ the notebook name with colon, then a space, then the URL and bookmark options:
 
 ```bash
 # create a new bookmark in a notebook named "sample"
-❯ nb sample: https://www.swifttechco.com --tags tag1,tag2
+❯ nb sample: https://github.com/Swift-Tech-Co/nb --tags tag1,tag2
 ```
 
 Notes can also be moved between notebooks:
@@ -4254,9 +4254,8 @@ nb notebooks init
 nb notebooks init ~/example
 
 # clone an existing notebook to ~/example
-nb notebooks init ~/example https://www.swifttechco.com
+nb notebooks init ~/example https://github.com/Swift-Tech-Co/nb
 ```
-
 
 ```bash
 # export global notebook named "example" to "../path/to/destination"
@@ -4409,10 +4408,10 @@ setting the remote URL using [`nb remote`](#remote):
 
 ```bash
 # set the current notebook's remote to a private GitHub repository
-nb remote set https://www.swifttechco.com
+nb remote set https://github.com/Swift-Tech-Co/nb
 
 # set the remote for the notebook named "example"
-nb example:remote set https://www.swifttechco.com
+nb example:remote set https://github.com/Swift-Tech-Co/nb
 ```
 
 Any notebook with a remote URL will sync automatically
@@ -4440,7 +4439,7 @@ Clone an existing notebook by passing the URL to
 
 ```bash
 # create a new notebook named "example" cloned from a private GitLab repository
-nb notebooks add example https://www.swifttechco.com
+nb notebooks add example https://github.com/Swift-Tech-Co/nb
 ```
 
 Turn off syncing for a notebook by removing the remote:
@@ -4494,7 +4493,7 @@ and can alternatively be specified as an argument to
 
 ```bash
 # set the remote for the current notebook to a remote URL and branch
-nb remote set https://www.swifttechco.com demo-branch
+nb remote set https://github.com/Swift-Tech-Co/nb demo-branch
 ```
 
 To create a notebook using an existing orphan branch on a remote,
@@ -4505,10 +4504,10 @@ pass the branch name to
 
 ```bash
 # initialize new "home" notebook with the branch "sample-branch" on the remote
-nb init https://www.swifttechco.com sample-branch
+nb init https://github.com/Swift-Tech-Co/nb sample-branch
 
 # add a new "example" notebook from the branch "example-branch" on the remote
-nb notebooks add example https://www.swifttechco.com example-branch
+nb notebooks add example https://github.com/Swift-Tech-Co/nb example-branch
 ```
 
 To list all branches on a remote, use [`nb remote branches`](#remote):
@@ -4518,7 +4517,7 @@ To list all branches on a remote, use [`nb remote branches`](#remote):
 nb remote branches
 
 # list all branches on a remote repository identified by a URL
-nb remote branches "https://www.swifttechco.com"
+nb remote branches "https://github.com/Swift-Tech-Co/nb"
 ```
 
 For information about assigning remotes, see [`nb help remote`](#remote).
@@ -4658,8 +4657,8 @@ nb import example.md sample.md
 
 ```bash
 # import a PDF file from the web
-nb import https://www.swifttechco.com
-# Imported "https://www.swifttechco.com" to "example.pdf"
+nb import https://github.com/Swift-Tech-Co/nb
+# Imported "https://github.com/Swift-Tech-Co/nb" to "example.pdf"
 
 # open example.pdf in your system's PDF viewer
 nb open example.pdf
@@ -4888,67 +4887,67 @@ nb set color_theme
 
 ##### `blacklight`
 
-| [![blacklight](https://xwmx.github.io/misc/nb/images/nb-theme-blacklight-home.png)](https://www.swifttechco.com) | [![blacklight](https://xwmx.github.io/misc/nb/images/nb-theme-blacklight-web.png)](https://www.swifttechco.com)  |
+| [![blacklight](https://xwmx.github.io/misc/nb/images/nb-theme-blacklight-home.png)](https://github.com/Swift-Tech-Co/nb) | [![blacklight](https://xwmx.github.io/misc/nb/images/nb-theme-blacklight-web.png)](https://github.com/Swift-Tech-Co/nb)  |
 |:--:|:--:|
 |    |    |
 
 ##### `console`
 
-| [![console](https://xwmx.github.io/misc/nb/images/nb-theme-console-home.png)](https://www.swifttechco.com)       | [![console](https://xwmx.github.io/misc/nb/images/nb-theme-console-web.png)](https://www.swifttechco.com)        |
+| [![console](https://xwmx.github.io/misc/nb/images/nb-theme-console-home.png)](https://github.com/Swift-Tech-Co/nb)       | [![console](https://xwmx.github.io/misc/nb/images/nb-theme-console-web.png)](https://github.com/Swift-Tech-Co/nb)        |
 |:--:|:--:|
 |    |    |
 
 ##### `desert`
 
-| [![desert](https://xwmx.github.io/misc/nb/images/nb-theme-desert-home.png)](https://www.swifttechco.com)         | [![desert](https://xwmx.github.io/misc/nb/images/nb-theme-desert-web.png)](https://www.swifttechco.com)          |
+| [![desert](https://xwmx.github.io/misc/nb/images/nb-theme-desert-home.png)](https://github.com/Swift-Tech-Co/nb)         | [![desert](https://xwmx.github.io/misc/nb/images/nb-theme-desert-web.png)](https://github.com/Swift-Tech-Co/nb)          |
 |:--:|:--:|
 |    |    |
 
 ##### `electro`
 
-| [![electro](https://xwmx.github.io/misc/nb/images/nb-theme-electro-home.png)](https://www.swifttechco.com)       | [![electro](https://xwmx.github.io/misc/nb/images/nb-theme-electro-web.png)](https://www.swifttechco.com)        |
+| [![electro](https://xwmx.github.io/misc/nb/images/nb-theme-electro-home.png)](https://github.com/Swift-Tech-Co/nb)       | [![electro](https://xwmx.github.io/misc/nb/images/nb-theme-electro-web.png)](https://github.com/Swift-Tech-Co/nb)        |
 |:--:|:--:|
 |    |    |
 
 ##### `forest`
 
-| [![forest](https://xwmx.github.io/misc/nb/images/nb-theme-forest-home.png)](https://www.swifttechco.com)         | [![forest](https://xwmx.github.io/misc/nb/images/nb-theme-forest-web.png)](https://www.swifttechco.com)          |
+| [![forest](https://xwmx.github.io/misc/nb/images/nb-theme-forest-home.png)](https://github.com/Swift-Tech-Co/nb)         | [![forest](https://xwmx.github.io/misc/nb/images/nb-theme-forest-web.png)](https://github.com/Swift-Tech-Co/nb)          |
 |:--:|:--:|
 |    |    |
 
 ##### `nb` (default)
 
-| [![nb](https://xwmx.github.io/misc/nb/images/nb-theme-nb-home.png)](https://www.swifttechco.com)                 | [![nb](https://xwmx.github.io/misc/nb/images/nb-theme-nb-web.png)](https://www.swifttechco.com)                  |
+| [![nb](https://xwmx.github.io/misc/nb/images/nb-theme-nb-home.png)](https://github.com/Swift-Tech-Co/nb)                 | [![nb](https://xwmx.github.io/misc/nb/images/nb-theme-nb-web.png)](https://github.com/Swift-Tech-Co/nb)                  |
 |:--:|:--:|
 |    |    |
 
 ##### `ocean`
 
-| [![ocean](https://xwmx.github.io/misc/nb/images/nb-theme-ocean-home.png)](https://www.swifttechco.com)           | [![ocean](https://xwmx.github.io/misc/nb/images/nb-theme-ocean-web.png)](https://www.swifttechco.com)            |
+| [![ocean](https://xwmx.github.io/misc/nb/images/nb-theme-ocean-home.png)](https://github.com/Swift-Tech-Co/nb)           | [![ocean](https://xwmx.github.io/misc/nb/images/nb-theme-ocean-web.png)](https://github.com/Swift-Tech-Co/nb)            |
 |:--:|:--:|
 |    |    |
 
 ##### `raspberry`
 
-| [![raspberry](https://xwmx.github.io/misc/nb/images/nb-theme-raspberry-home.png)](https://www.swifttechco.com)   | [![raspberry](https://xwmx.github.io/misc/nb/images/nb-theme-raspberry-web.png)](https://www.swifttechco.com)    |
+| [![raspberry](https://xwmx.github.io/misc/nb/images/nb-theme-raspberry-home.png)](https://github.com/Swift-Tech-Co/nb)   | [![raspberry](https://xwmx.github.io/misc/nb/images/nb-theme-raspberry-web.png)](https://github.com/Swift-Tech-Co/nb)    |
 |:--:|:--:|
 |    |    |
 
 ##### `smoke`
 
-| [![smoke](https://xwmx.github.io/misc/nb/images/nb-theme-monochrome-home.png)](https://www.swifttechco.com)      | [![smoke](https://xwmx.github.io/misc/nb/images/nb-theme-smoke-web.png)](https://www.swifttechco.com)            |
+| [![smoke](https://xwmx.github.io/misc/nb/images/nb-theme-monochrome-home.png)](https://github.com/Swift-Tech-Co/nb)      | [![smoke](https://xwmx.github.io/misc/nb/images/nb-theme-smoke-web.png)](https://github.com/Swift-Tech-Co/nb)            |
 |:--:|:--:|
 |    |    |
 
 ##### `unicorn`
 
-| [![unicorn](https://xwmx.github.io/misc/nb/images/nb-theme-unicorn-home.png)](https://www.swifttechco.com)       | [![unicorn](https://xwmx.github.io/misc/nb/images/nb-theme-unicorn-web.png)](https://www.swifttechco.com)        |
+| [![unicorn](https://xwmx.github.io/misc/nb/images/nb-theme-unicorn-home.png)](https://github.com/Swift-Tech-Co/nb)       | [![unicorn](https://xwmx.github.io/misc/nb/images/nb-theme-unicorn-web.png)](https://github.com/Swift-Tech-Co/nb)        |
 |:--:|:--:|
 |    |    |
 
 ##### `utility`
 
-| [![utility](https://xwmx.github.io/misc/nb/images/nb-theme-utility-home.png)](https://www.swifttechco.com)       | [![utility](https://xwmx.github.io/misc/nb/images/nb-theme-utility-web.png)](https://www.swifttechco.com)        |
+| [![utility](https://xwmx.github.io/misc/nb/images/nb-theme-utility-home.png)](https://github.com/Swift-Tech-Co/nb)       | [![utility](https://xwmx.github.io/misc/nb/images/nb-theme-utility-web.png)](https://github.com/Swift-Tech-Co/nb)        |
 |:--:|:--:|
 |    |    |
 
@@ -4975,7 +4974,7 @@ View this theme as a complete file:
 Themes can be installed using [`nb plugins`](#plugins):
 
 ```bash
-❯ nb plugins install https://www.swifttechco.com
+❯ nb plugins install https://github.com/Swift-Tech-Co/nb
 Plugin installed:
 /home/example/.nb/.plugins/turquoise.nb-theme
 ```
@@ -5103,13 +5102,13 @@ Plugins can be installed from either a URL or a path using the
 
 ```bash
 # install a plugin from a URL
-nb plugins install https://www.swifttechco.com
+nb plugins install https://github.com/Swift-Tech-Co/nb
 
 # install a plugin from a standard GitHub URL
-nb plugins install https://www.swifttechco.com
+nb plugins install https://github.com/Swift-Tech-Co/nb
 
 # install a theme from a standard GitHub URL
-nb plugins install https://www.swifttechco.com
+nb plugins install https://github.com/Swift-Tech-Co/nb
 
 # install a plugin from a path
 nb plugins install plugins/example.nb-plugin
@@ -5511,7 +5510,7 @@ home
 nb❯ edit 3 --content "New content."
 Updated: [3] Example
 
-nb❯ bookmark https://www.swifttechco.com
+nb❯ bookmark https://github.com/Swift-Tech-Co/nb
 Added: [4] 🔖 example.bookmark.md "Example Title (example.com)"
 
 nb❯ ls
@@ -5523,14 +5522,14 @@ home
 [1] Demo
 
 nb❯ bookmark url 4
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 nb❯ search "example"
 [4] example.bookmark.md "Example (example.com)"
 -----------------------------------------------
 1:# Example (example.com)
 
-3:https://www.swifttechco.com
+3:https://github.com/Swift-Tech-Co/nb
 
 [3] example.md "Example"
 ------------------------
@@ -5898,7 +5897,7 @@ Program Options:
   --version           Display version information.
 
 More Information:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 ```
 
 #### `bookmark help`
@@ -5984,15 +5983,15 @@ Description:
   Bookmarks are identified by the `.bookmark.md` file extension. The
   bookmark URL is the first URL in the file within "<" and ">" characters:
 
-    https://www.swifttechco.com
+    https://github.com/Swift-Tech-Co/nb
 
-    1. https://www.swifttechco.com
-    2. https://www.swifttechco.com
-    3. https://www.swifttechco.com
-    4. https://www.swifttechco.com)
+    1. https://github.com/Swift-Tech-Co/nb
+    2. https://github.com/Swift-Tech-Co/nb
+    3. https://github.com/Swift-Tech-Co/nb
+    4. https://github.com/Swift-Tech-Co/nb)
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help browse
@@ -6001,12 +6000,12 @@ See Also:
   nb help show
 
 Examples:
-  bookmark https://www.swifttechco.com
-  bookmark https://www.swifttechco.com --encrypt
-  bookmark https://www.swifttechco.com --tags example,sample,demo
-  bookmark https://www.swifttechco.com -c "Example comment."
-  bookmark https://www.swifttechco.com -f example-filename
-  bookmark https://www.swifttechco.com --quote "Example quote or excerpt."
+  bookmark https://github.com/Swift-Tech-Co/nb
+  bookmark https://github.com/Swift-Tech-Co/nb --encrypt
+  bookmark https://github.com/Swift-Tech-Co/nb --tags example,sample,demo
+  bookmark https://github.com/Swift-Tech-Co/nb -c "Example comment."
+  bookmark https://github.com/Swift-Tech-Co/nb -f example-filename
+  bookmark https://github.com/Swift-Tech-Co/nb --quote "Example quote or excerpt."
   bookmark list
   bookmark search "example query"
   bookmark open 5
@@ -6132,7 +6131,7 @@ Description:
   `nb set encryption_tool`.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help bookmark
@@ -6187,7 +6186,7 @@ Description:
   This is an alias for `nb notebooks archive`.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help notebooks
@@ -6277,15 +6276,15 @@ Description:
   Bookmarks are identified by the `.bookmark.md` file extension. The
   bookmark URL is the first URL in the file within "<" and ">" characters:
 
-    https://www.swifttechco.com
+    https://github.com/Swift-Tech-Co/nb
 
-    1. https://www.swifttechco.com
-    2. https://www.swifttechco.com
-    3. https://www.swifttechco.com
-    4. https://www.swifttechco.com)
+    1. https://github.com/Swift-Tech-Co/nb
+    2. https://github.com/Swift-Tech-Co/nb
+    3. https://github.com/Swift-Tech-Co/nb
+    4. https://github.com/Swift-Tech-Co/nb)
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help browse
@@ -6294,13 +6293,13 @@ See Also:
   nb help show
 
 Examples:
-  nb https://www.swifttechco.com
-  nb example: https://www.swifttechco.com
-  nb https://www.swifttechco.com --encrypt
-  nb https://www.swifttechco.com --tags example,sample,demo
-  nb https://www.swifttechco.com -c "Example comment."
-  nb https://www.swifttechco.com -f example-filename
-  nb https://www.swifttechco.com --quote "Example quote or excerpt."
+  nb https://github.com/Swift-Tech-Co/nb
+  nb example: https://github.com/Swift-Tech-Co/nb
+  nb https://github.com/Swift-Tech-Co/nb --encrypt
+  nb https://github.com/Swift-Tech-Co/nb --tags example,sample,demo
+  nb https://github.com/Swift-Tech-Co/nb -c "Example comment."
+  nb https://github.com/Swift-Tech-Co/nb -f example-filename
+  nb https://github.com/Swift-Tech-Co/nb --quote "Example quote or excerpt."
   nb bookmark list
   nb bookmark search "example query"
   nb bookmark open 5
@@ -6382,14 +6381,14 @@ Description:
   `browse` supports `w3m` [1] and `links` [2], and depends on
   `ncat` [3] or `socat` [4] and `pandoc` [5]:
 
-    1. https://www.swifttechco.com
-    2. https://www.swifttechco.com)
-    3. https://www.swifttechco.com
-    4. https://www.swifttechco.com
-    5. https://www.swifttechco.com
+    1. https://github.com/Swift-Tech-Co/nb
+    2. https://github.com/Swift-Tech-Co/nb)
+    3. https://github.com/Swift-Tech-Co/nb
+    4. https://github.com/Swift-Tech-Co/nb
+    5. https://github.com/Swift-Tech-Co/nb
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help add
@@ -6433,7 +6432,7 @@ Description:
   Manage completion scripts.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help env
@@ -6454,7 +6453,7 @@ Description:
   Copy or duplicate an item.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help move
@@ -6503,7 +6502,7 @@ Description:
   Delete one or more items.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help add
@@ -6552,7 +6551,7 @@ Description:
   Mark a todo or task as done.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help tasks
@@ -6604,7 +6603,7 @@ Description:
   that file type.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help add
@@ -6655,16 +6654,16 @@ Options:
   -l, --long  Print additional environmental information.
   --mathjax   Install or update MathJax [3].
 
-    1. https://www.swifttechco.com
-    2. https://www.swifttechco.com
-    3. https://www.swifttechco.com
+    1. https://github.com/Swift-Tech-Co/nb
+    2. https://github.com/Swift-Tech-Co/nb
+    3. https://github.com/Swift-Tech-Co/nb
 
 Description:
   Print program environment and configuration information, or install
   dependencies.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help completions
@@ -6707,10 +6706,10 @@ Description:
   in <path>. Any additional arguments are passed directly to Pandoc.
   See the Pandoc help information for available options.
 
-    1. https://www.swifttechco.com
+    1. https://github.com/Swift-Tech-Co/nb
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help browse
@@ -6754,7 +6753,7 @@ Description:
   Add, delete, and list folders.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help add
@@ -6800,8 +6799,8 @@ Description:
   Run `git` commands within the current notebook directory.
 
 Read More:
-  https://www.swifttechco.com
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help history
@@ -6866,11 +6865,11 @@ Description:
   Display notebook history using `tig` [1] (if available) or `git log`.
   When a note is specified, the history for that note is displayed.
 
-    1. https://www.swifttechco.com
+    1. https://github.com/Swift-Tech-Co/nb
 
 Read More:
-  https://www.swifttechco.com
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help git
@@ -6923,7 +6922,7 @@ Description:
   a local notebook to make it global.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help add
@@ -6932,8 +6931,8 @@ See Also:
 Examples:
   nb import ~/Pictures/example.png
   nb import ~/Documents/example.docx
-  nb import https://www.swifttechco.com
-  nb example:import https://www.swifttechco.com
+  nb import https://github.com/Swift-Tech-Co/nb
+  nb example:import https://github.com/Swift-Tech-Co/nb
   nb import ./*
   nb import ./*.md
   nb import ~/Pictures/example.png example-notebook:
@@ -6970,8 +6969,8 @@ See Also:
 
 Examples:
   nb init
-  nb init https://www.swifttechco.com
-  nb init https://www.swifttechco.com example-branch
+  nb init https://github.com/Swift-Tech-Co/nb
+  nb init https://github.com/Swift-Tech-Co/nb example-branch
 ```
 
 #### `list`
@@ -7022,7 +7021,7 @@ Description:
   expression.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 Indicators:
   🔉  Audio
@@ -7115,7 +7114,7 @@ Description:
   `nb help list`.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 Indicators:
   🔉  Audio
@@ -7187,7 +7186,7 @@ Description:
   `nb move` and `nb rename` are aliases and can be used interchangeably.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help copy
@@ -7312,18 +7311,18 @@ Subcommands:
   unarchive  Remove "archived" status from the current notebook or notebook <name>.
   use        Switch to a notebook.
 
-    1. https://www.swifttechco.com
-    2. https://www.swifttechco.com
-    3. https://www.swifttechco.com
-    4. https://www.swifttechco.com
-    5. https://www.swifttechco.com
-    6. https://www.swifttechco.com
+    1. https://github.com/Swift-Tech-Co/nb
+    2. https://github.com/Swift-Tech-Co/nb
+    3. https://github.com/Swift-Tech-Co/nb
+    4. https://github.com/Swift-Tech-Co/nb
+    5. https://github.com/Swift-Tech-Co/nb
+    6. https://github.com/Swift-Tech-Co/nb
 
 Description:
   Manage notebooks.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help archive
@@ -7338,7 +7337,7 @@ See Also:
 Examples:
   nb notebooks --names
   nb notebooks add sample
-  nb notebooks add example https://www.swifttechco.com
+  nb notebooks add example https://github.com/Swift-Tech-Co/nb
   nb nb current --path
   nb nb archive example
 
@@ -7368,7 +7367,7 @@ Description:
   with a notebook opens the notebook folder in the system's file browser.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See also:
   nb help bookmark
@@ -7413,15 +7412,15 @@ Description:
   the following list: `ranger` [1], `mc` [2], `vifm` [3], `joshuto` [4],
   `lsd` [5], eza` [6], or `ls`.
 
-    1. https://www.swifttechco.com
-    2. https://www.swifttechco.com
-    3. https://www.swifttechco.com
-    4. https://www.swifttechco.com
-    5. https://www.swifttechco.com
-    6. https://www.swifttechco.com
+    1. https://github.com/Swift-Tech-Co/nb
+    2. https://github.com/Swift-Tech-Co/nb
+    3. https://github.com/Swift-Tech-Co/nb
+    4. https://github.com/Swift-Tech-Co/nb
+    5. https://github.com/Swift-Tech-Co/nb
+    6. https://github.com/Swift-Tech-Co/nb
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See also:
   nb help bookmark
@@ -7465,7 +7464,7 @@ Description:
   Pin an item so it appears first in lists.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help browse
@@ -7503,7 +7502,7 @@ Description:
   Manage plugins and themes.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 Plugin Extensions:
   .nb-theme   Plugins defining color themes.
@@ -7552,8 +7551,8 @@ Description:
   Configure the remote repository URL and branch for the current notebook.
 
 Read More:
-  https://www.swifttechco.com
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help history
@@ -7562,9 +7561,9 @@ See Also:
   nb help sync
 
 Examples:
-  nb remote set https://www.swifttechco.com
+  nb remote set https://github.com/Swift-Tech-Co/nb
   nb remote remove
-  nb example-notebook:remote set https://www.swifttechco.com
+  nb example-notebook:remote set https://github.com/Swift-Tech-Co/nb
 ```
 
 #### `run`
@@ -7633,14 +7632,14 @@ Description:
   --utility <name> option.
 
   Supported alternative search tools:
-    1. `rga`   https://www.swifttechco.com
-    2. `rg`    https://www.swifttechco.com
-    3. `ag`    https://www.swifttechco.com
-    4. `ack`   https://www.swifttechco.com
-    5. `grep`  https://www.swifttechco.com
+    1. `rga`   https://github.com/Swift-Tech-Co/nb
+    2. `rg`    https://github.com/Swift-Tech-Co/nb
+    3. `ag`    https://github.com/Swift-Tech-Co/nb
+    4. `ack`   https://github.com/Swift-Tech-Co/nb
+    5. `grep`  https://github.com/Swift-Tech-Co/nb
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help browse
@@ -7725,7 +7724,7 @@ Description:
     nb set limit 40
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help unset
@@ -7796,7 +7795,7 @@ Alias:
 
      To view screenshots of the built-in themes, visit:
 
-         https://www.swifttechco.com
+         https://github.com/Swift-Tech-Co/nb
 
      `nb` supports custom, user-defined themes. To learn more, run:
 
@@ -8014,7 +8013,7 @@ Description:
   When <subcommand> is present, the command will run as the shell is opened.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help run
@@ -8104,15 +8103,15 @@ Description:
   If `bat` [4], `highlight` [5], or Pygments [6] is installed, notes are
   printed with syntax highlighting.
 
-    1. https://www.swifttechco.com
-    2. https://www.swifttechco.com
-    3. https://www.swifttechco.com)
-    4. https://www.swifttechco.com
-    5. https://www.swifttechco.com
-    6. https://www.swifttechco.com
+    1. https://github.com/Swift-Tech-Co/nb
+    2. https://github.com/Swift-Tech-Co/nb
+    3. https://github.com/Swift-Tech-Co/nb)
+    4. https://github.com/Swift-Tech-Co/nb
+    5. https://github.com/Swift-Tech-Co/nb
+    6. https://github.com/Swift-Tech-Co/nb
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help browse
@@ -8159,8 +8158,8 @@ Description:
   Print archival, git, and remote status for the current notebook or <notebook>.
 
 Read More:
-  https://www.swifttechco.com
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help archive
@@ -8203,7 +8202,7 @@ Description:
   primarily for plugins.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help plugins
@@ -8237,7 +8236,7 @@ Private Repositories and Git Credentials:
   For repositories cloned over SSH, keys can be added to the ssh-agent.
 
   More Information:
-    https://www.swifttechco.com
+    https://github.com/Swift-Tech-Co/nb
 
 Sync Conflict Resolution:
   When `nb sync` encounters a conflict in a text file and can't merge
@@ -8251,11 +8250,11 @@ Sync Conflict Resolution:
   the filename.
 
   More Information:
-    https://www.swifttechco.com
+    https://github.com/Swift-Tech-Co/nb
 
 Read More:
-  https://www.swifttechco.com
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help history
@@ -8289,8 +8288,8 @@ Description:
   List tasks in todos, notebooks, folders, and other items.
 
 Read More:
-  https://www.swifttechco.com
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help do
@@ -8356,7 +8355,7 @@ Description:
   Manage todos and tasks.
 
 Read More::
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help do
@@ -8398,7 +8397,7 @@ Description:
   This is an alias for `nb notebooks unarchive`.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help archive
@@ -8431,7 +8430,7 @@ Description:
   Mark a todo or task as not done.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help do
@@ -8461,7 +8460,7 @@ Description:
   Unpin a pinned item.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help browse
@@ -8490,7 +8489,7 @@ Description:
   This is an alias for `nb settings unset`.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help settings
@@ -8523,7 +8522,7 @@ Description:
   of this command.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help env
@@ -8544,7 +8543,7 @@ Description:
   Switch to the specified notebook. Shortcut for `nb notebooks use`.
 
 Read More:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 
 See Also:
   nb help notebooks
@@ -8608,7 +8607,7 @@ See Also:
 ##### Install
 
 ```bash
-nb plugins install https://www.swifttechco.com
+nb plugins install https://github.com/Swift-Tech-Co/nb
 ```
 
 ##### Help
@@ -8628,7 +8627,7 @@ Description:
       Example with link to [[Target Note Title]] in content.
 
   Depends on note-link-janitor:
-    https://www.swifttechco.com
+    https://github.com/Swift-Tech-Co/nb
 
     Requirement: every note in the notebook must have a title.
 ```
@@ -8640,7 +8639,7 @@ Description:
 ##### Install
 
 ```bash
-nb plugins install https://www.swifttechco.com
+nb plugins install https://github.com/Swift-Tech-Co/nb
 ```
 
 ##### Help
@@ -8670,7 +8669,7 @@ Alias:
 ##### Install
 
 ```bash
-nb plugins install https://www.swifttechco.com
+nb plugins install https://github.com/Swift-Tech-Co/nb
 ```
 
 ##### Help
@@ -8704,7 +8703,7 @@ Examples:
 ##### Install
 
 ```bash
-nb plugins install https://www.swifttechco.com
+nb plugins install https://github.com/Swift-Tech-Co/nb
 ```
 
 ##### Help
@@ -8738,7 +8737,7 @@ Examples:
 ##### Install
 
 ```bash
-nb plugins install https://www.swifttechco.com
+nb plugins install https://github.com/Swift-Tech-Co/nb
 ```
 
 ##### Help
@@ -8774,7 +8773,7 @@ Description:
   title.txt contains the book metadata in a YAML block. For more information
   about the fields for this file, visit:
 
-    https://www.swifttechco.com
+    https://github.com/Swift-Tech-Co/nb
 
   stylesheet.css contains base styling for the generated ebook. It can be used
   as it is and can also be edited using `nb edit`.
@@ -8789,7 +8788,7 @@ Description:
     nb export 12 .
 
 More info:
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
 ```
 
 #### `example`
@@ -8799,7 +8798,7 @@ More info:
 ##### Install
 
 ```bash
-nb plugins install https://www.swifttechco.com
+nb plugins install https://github.com/Swift-Tech-Co/nb
 ```
 
 ##### Help
@@ -8819,7 +8818,7 @@ Description:
 ##### Install
 
 ```bash
-nb plugins install https://www.swifttechco.com
+nb plugins install https://github.com/Swift-Tech-Co/nb
 ```
 
 ##### Help
@@ -8832,8 +8831,8 @@ Description:
   Display weather information from wttr.in.
 
 More Info:
-  https://www.swifttechco.com
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
+  https://github.com/Swift-Tech-Co/nb
 
 Examples:
   nb weather
@@ -9081,8 +9080,8 @@ when creating bookmarks.
 
 Supported Tools:
 
-- https://www.swifttechco.com
-- https://www.swifttechco.com
+- https://github.com/Swift-Tech-Co/nb
+- https://github.com/Swift-Tech-Co/nb
 
 Supported Values: '', 'rdrview', 'readability'
 ```
@@ -9103,9 +9102,9 @@ bookmarks.
 
 Supported Tools:
 
-- https://www.swifttechco.com
-- https://www.swifttechco.com
-- https://www.swifttechco.com
+- https://github.com/Swift-Tech-Co/nb
+- https://github.com/Swift-Tech-Co/nb
+- https://github.com/Swift-Tech-Co/nb
 
 Supported Values: '', 'html-to-markdown', 'markitdown', 'pandoc'
 ```
@@ -9127,8 +9126,8 @@ The Pandoc reader, including extensions, to use for converting Markdown to
 HTML in `nb browse`.
 
 More information:
-  https://www.swifttechco.com
-  https://www.swifttechco.com
+  https://github.com/Swift-Tech-Co/nb
+  https://github.com/Swift-Tech-Co/nb
 ```
 
 <p>
@@ -9791,13 +9790,13 @@ bookmark URL is the first URL in the file within `<` and `>` characters.
 To create a minimally valid bookmark file with [`nb add`](#add):
 
 ```bash
-nb add example.bookmark.md --content "https://www.swifttechco.com"
+nb add example.bookmark.md --content "https://github.com/Swift-Tech-Co/nb"
 ```
 
 This creates a file with the name `example.bookmark.md` containing:
 
 ```markdown
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 ```
 
 In a full bookmark, information is separated into sections,
@@ -9808,7 +9807,7 @@ with each bookmark section indicated by a Markdown `h2` heading.
 ````markdown
 # Example Title (example.com)
 
-https://www.swifttechco.com
+https://github.com/Swift-Tech-Co/nb
 
 ## Description
 
@@ -9826,8 +9825,8 @@ Example comment.
 
 ## Related
 
-- https://www.swifttechco.com
-- https://www.swifttechco.com
+- https://github.com/Swift-Tech-Co/nb
+- https://github.com/Swift-Tech-Co/nb
 - [[example:123]]
 
 ## Tags
@@ -9863,7 +9862,7 @@ More information\...
       permission.
     </p>
     <p>
-      <a href="https://www.swifttechco.com">More information...</a>
+      <a href="https://github.com/Swift-Tech-Co/nb">More information...</a>
     </p>
   </body>
 </html>
@@ -10057,7 +10056,7 @@ Example description.
 ## Related
 
 - [[example:123]]
-- https://www.swifttechco.com
+- https://github.com/Swift-Tech-Co/nb
 
 ## Tags
 
@@ -10307,8 +10306,8 @@ tests with globbing, e.g., `bats test/browse*` and `bats test/folders*`.
 <div align="center">
   <span>
   Copyright (c) 2015-present ·
-  <a href="https://www.swifttechco.com">William Melody</a> ·
-  <a href="https://www.swifttechco.com">AGPLv3</a>
+  <a href="https://github.com/Swift-Tech-Co/nb">William Melody</a> ·
+  <a href="https://github.com/Swift-Tech-Co/nb">AGPLv3</a>
   </span>
 
   <br/>
@@ -10317,8 +10316,8 @@ tests with globbing, e.g., `bats test/browse*` and `bats test/folders*`.
 
 <div align="center">
   <span>
-  <a href="https://www.swifttechco.com">xwmx.github.io/nb</a>&nbsp;·
-  <a href="https://www.swifttechco.com">github.com/xwmx/nb</a>
+  <a href="https://github.com/Swift-Tech-Co/nb">xwmx.github.io/nb</a>&nbsp;·
+  <a href="https://github.com/Swift-Tech-Co/nb">github.com/xwmx/nb</a>
   </span>
 
   <br/>
@@ -10354,13 +10353,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/nb
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [xwmx/nb](https://github.com/xwmx/nb) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
